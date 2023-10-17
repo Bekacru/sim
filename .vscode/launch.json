@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug Query",
+            "program": "${workspaceFolder:swift}/.build/debug/Query",
+            "args": [],
+            "cwd": "${workspaceFolder:swift}",
+            "preLaunchTask": "swift: Build Debug Query"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release Query",
+            "program": "${workspaceFolder:swift}/.build/release/Query",
+            "args": [],
+            "cwd": "${workspaceFolder:swift}",
+            "preLaunchTask": "swift: Build Release Query"
+        }
+    ]
+}
